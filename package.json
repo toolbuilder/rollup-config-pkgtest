@@ -1,0 +1,43 @@
+{
+  "name": "@toolbuilder/rollup-config-pkgtest",
+  "description": "Rollup configuration to build and run package tests in a temporary package",
+  "version": "0.1.0-rc0",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/toolbuilder/rollup-config-pkgtest#readme",
+  "bugs": {
+    "url": "https://github.com/toolbuilder/rollup-config-pkgtest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toolbuilder/rollup-config-pkgtest.git"
+  },
+  "main": "index.js",
+  "module": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+  },
+  "eslintConfig": {
+    "extends": "@toolbuilder/eslint-config"
+  },
+  "dependencies": {
+    "@toolbuilder/rollup-plugin-create-pack-file": "^0.1.1",
+    "cuid": "^2.1.8",
+    "date-fns": "^2.14.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.2",
+    "rollup": "^2.14.0",
+    "rollup-plugin-create-test-package-json": "^0.1.0",
+    "rollup-plugin-multi-input": "^1.1.1",
+    "rollup-plugin-relative-to-package": "^0.1.1"
+  },
+  "devDependencies": {
+    "@toolbuilder/eslint-config": ">=0.1.2",
+    "eslint": ">=6.8.0",
+    "npm-run-all": "^4.1.5",
+    "tape": "^5.0.0",
+    "zora": "^3.1.8"
+  }
+}
