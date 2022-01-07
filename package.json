@@ -1,6 +1,6 @@
 {
   "name": "@toolbuilder/rollup-config-pkgtest",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Rollup configuration to build and run package tests in a temporary package.",
   "keywords": [
     "rollup",
