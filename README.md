@@ -1,18 +1,8 @@
 # Rollup-Config-PkgTest
 
-This [Rollup](https://rollupjs.org/guide/en/) configuration tests my packages. It is not configurable, but the configuration is easily adaptable to other situations.
+This [Rollup](https://rollupjs.org/guide/en/) configuration tests Node CommonJS packages. It is not configurable, but the configuration is easily adaptable to other situations.
 
-Here's what it does:
-
-* converts units tests so that they use package instead of relative imports (e.g. `../src/index` to `iterablefu`)
-  * [rollup-plugin-multi-input](https://github.com/alfredosalzillo/rollup-plugin-multi-input)
-  * [rollup-plugin-relative-to-package](https://github.com/toolbuilder/rollup-plugin-relative-to-package)
-* builds a test package around those tests
-  * [rollup-plugin-create-test-package-json](https://github.com/toolbuilder/rollup-plugin-create-test-package-json)
-  * [rollup-plugin-create-pack-file](https://github.com/toolbuilder/rollup-plugin-create-pack-file)
-* and run the tests
-  * This package has a tiny, 23 line, plugin for that.
-* It uses [pnpm](https://pnpm.js.org/) to build the pack file, install dependencies, and run the tests.
+This package has been superceded by [@toolbuilder/rollup-plugin-test-tools](https://www.npmjs.com/package/@toolbuilder/rollup-plugin-test-tools). With the advent of Node ES modules, packages should also be tested against ES projects. So called 'isomorphic' packages should be tested against browsers. It is easy to include more tests in the provided rollup configuration and bump the major version number. However, a one-size-fits-all configuration no longer meets my needs.
 
 ## Installation
 
