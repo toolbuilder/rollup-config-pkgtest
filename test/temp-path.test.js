@@ -1,5 +1,5 @@
 import { test } from 'zora'
-import { tempPath } from '../src/temp-path'
+import { tempPath } from '../src/rollup.config.js'
 import { tmpdir } from 'os'
 import { join } from 'path'
 
